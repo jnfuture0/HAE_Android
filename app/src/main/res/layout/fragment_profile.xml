@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#2196F3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/nanumsquare_b"
+            android:text="@string/profile"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+        <ImageButton
+            android:id="@+id/profile_frag_edit_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/icon_edit_white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="15dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/profile_frag_user_img_outLine"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/style_radius_25_color_primary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+            <ImageView
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/profile_frag_user_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/human"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/profile_frag_userName"
+            app:layout_constraintTop_toTopOf="@id/profile_frag_user_img_outLine"
+            app:layout_constraintBottom_toBottomOf="@id/profile_frag_user_img_outLine"
+            app:layout_constraintLeft_toRightOf="@id/profile_frag_user_img_outLine"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/nanumsquare_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquare_b"
+        app:layout_constraintTop_toBottomOf="@id/profile_frag_user_img_outLine"
+        app:layout_constraintLeft_toLeftOf="@id/profile_frag_user_img_outLine"
+        android:background="#dedede"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="가입한 크루"/>
+
+    <TextView
+        android:id="@+id/profile_frag_noUserCrew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquare_b"
+        app:layout_constraintTop_toBottomOf="@id/profile_frag_user_img_outLine"
+        app:layout_constraintLeft_toLeftOf="@id/profile_frag_user_img_outLine"
+        android:layout_margin="30dp"
+        android:text="아직 가입한 크루가 없습니다"/>
+
+
+    <LinearLayout
+        android:id="@+id/profile_frag_userCrew"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/style_bottom_radius_5_shadow"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profile_frag_crew_img"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:background="#ffffff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/profile_frag_crew_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="함께 운동해요 ^^"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/nanumsquare_b"/>
+
+            <TextView
+                android:id="@+id/profile_frag_crew_memberCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="멤버 수 : 210명"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/nanumsquare_r"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

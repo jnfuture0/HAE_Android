@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ex_type_filter_array">
+        <item>전체</item>
+        <item>가슴운동</item>
+        <item>평행봉</item>
+        <item>철봉</item>
+        <item>허리운동</item>
+    </string-array>
+
+    <string-array name="ex_type_filter_array_except_all">
+        <item>가슴운동</item>
+        <item>평행봉</item>
+        <item>철봉</item>
+        <item>허리운동</item>
+    </string-array>
+    
+    <string-array name="array_color">
+        <item>#03DAC5</item>
+        <item>#03DAC5</item>
+        <item>#03DAC5</item>
+        <item>#03DAC5</item>
+    </string-array>
+
+</resources>

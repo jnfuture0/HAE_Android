@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1073be</color>
+    <color name="colorAccent">#617df5</color>
+    <color name="feedListBackground">#dedede</color>
+    <color name="mTransparent">#1a000000</color>
+    <color name="lightGray">#dedede</color>
+</resources>

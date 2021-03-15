@@ -1,0 +1,49 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">#ffffff</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!--@color/mTransparent-->
+
+    <style name="AppTheme.NoStatusBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">#ffffff</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="TabTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#d9d9d9</item> <!--배경-->
+        <item name="android:textColorPrimary">@android:color/white</item><!--탭바 선택된 텍스트-->
+        <item name="android:textColorSecondary">@android:color/black</item><!--탭바 텍스트-->
+        <item name="colorAccent">#b5b5b5</item><!--하단 바 색-->
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TabTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#fff</item> <!--배경-->
+        <!--<item name="android:textColorPrimary">#1A9AD3</item>탭바 선택된 텍스트-->
+        <item name="android:textColorSecondary">#fff</item><!--탭바 텍스트-->
+        <item name="android:fontFamily">@font/nanumsquare_eb</item>
+        <item name="android:textSize">12.5sp</item>
+        <item name="colorAccent">#001023</item> <!--하단 바 색-->
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>
